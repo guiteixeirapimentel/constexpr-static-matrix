@@ -15,7 +15,7 @@ public:
     constexpr StaticMatrix() noexcept = default;
     constexpr ~StaticMatrix() noexcept = default;
 
-    explicit StaticMatrix(const std::array<T, nlines * ncols> &initial) noexcept
+    constexpr explicit StaticMatrix(const std::array<T, nlines * ncols> &initial) noexcept
         : data(initial)
     {
     }
